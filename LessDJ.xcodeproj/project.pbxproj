@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA8108F9143459B500AADE2C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8108F8143459B500AADE2C /* Cocoa.framework */; };
+		CA810903143459B500AADE2C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA810901143459B500AADE2C /* InfoPlist.strings */; };
+		CA810905143459B500AADE2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA810904143459B500AADE2C /* main.m */; };
+		CA810909143459B500AADE2C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CA810907143459B500AADE2C /* Credits.rtf */; };
+		CA81090C143459B500AADE2C /* LessDJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA81090B143459B500AADE2C /* LessDJAppDelegate.m */; };
+		CA81090F143459B600AADE2C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA81090D143459B600AADE2C /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA8108F4143459B500AADE2C /* LessDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LessDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA8108F8143459B500AADE2C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CA8108FB143459B500AADE2C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CA8108FC143459B500AADE2C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CA8108FD143459B500AADE2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CA810900143459B500AADE2C /* LessDJ-Info.plist */ = {isa = PBXFileReference; path = "LessDJ-Info.plist"; sourceTree = "<group>"; };
+		CA810902143459B500AADE2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CA810904143459B500AADE2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA810906143459B500AADE2C /* LessDJ-Prefix.pch */ = {isa = PBXFileReference; path = "LessDJ-Prefix.pch"; sourceTree = "<group>"; };
+		CA810908143459B500AADE2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CA81090A143459B500AADE2C /* LessDJAppDelegate.h */ = {isa = PBXFileReference; path = LessDJAppDelegate.h; sourceTree = "<group>"; };
+		CA81090B143459B500AADE2C /* LessDJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LessDJAppDelegate.m; sourceTree = "<group>"; };
+		CA81090E143459B600AADE2C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA8108F1143459B500AADE2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA8108F9143459B500AADE2C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA8108E9143459B500AADE2C = {
+			isa = PBXGroup;
+			children = (
+				CA8108FE143459B500AADE2C /* LessDJ */,
+				CA8108F7143459B500AADE2C /* Frameworks */,
+				CA8108F5143459B500AADE2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA8108F5143459B500AADE2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA8108F4143459B500AADE2C /* LessDJ.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA8108F7143459B500AADE2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA8108F8143459B500AADE2C /* Cocoa.framework */,
+				CA8108FA143459B500AADE2C /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA8108FA143459B500AADE2C /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA8108FB143459B500AADE2C /* AppKit.framework */,
+				CA8108FC143459B500AADE2C /* CoreData.framework */,
+				CA8108FD143459B500AADE2C /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CA8108FE143459B500AADE2C /* LessDJ */ = {
+			isa = PBXGroup;
+			children = (
+				CA81090A143459B500AADE2C /* LessDJAppDelegate.h */,
+				CA81090B143459B500AADE2C /* LessDJAppDelegate.m */,
+				CA81090D143459B600AADE2C /* MainMenu.xib */,
+				CA8108FF143459B500AADE2C /* Supporting Files */,
+			);
+			path = LessDJ;
+			sourceTree = "<group>";
+		};
+		CA8108FF143459B500AADE2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA810900143459B500AADE2C /* LessDJ-Info.plist */,
+				CA810901143459B500AADE2C /* InfoPlist.strings */,
+				CA810904143459B500AADE2C /* main.m */,
+				CA810906143459B500AADE2C /* LessDJ-Prefix.pch */,
+				CA810907143459B500AADE2C /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA8108F3143459B500AADE2C /* LessDJ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA810912143459B600AADE2C /* Build configuration list for PBXNativeTarget "LessDJ" */;
+			buildPhases = (
+				CA8108F0143459B500AADE2C /* Sources */,
+				CA8108F1143459B500AADE2C /* Frameworks */,
+				CA8108F2143459B500AADE2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LessDJ;
+			productName = LessDJ;
+			productReference = CA8108F4143459B500AADE2C /* LessDJ.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA8108EB143459B500AADE2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "xu han";
+			};
+			buildConfigurationList = CA8108EE143459B500AADE2C /* Build configuration list for PBXProject "LessDJ" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CA8108E9143459B500AADE2C;
+			productRefGroup = CA8108F5143459B500AADE2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA8108F3143459B500AADE2C /* LessDJ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA8108F2143459B500AADE2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA810903143459B500AADE2C /* InfoPlist.strings in Resources */,
+				CA810909143459B500AADE2C /* Credits.rtf in Resources */,
+				CA81090F143459B600AADE2C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA8108F0143459B500AADE2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA810905143459B500AADE2C /* main.m in Sources */,
+				CA81090C143459B500AADE2C /* LessDJAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA810901143459B500AADE2C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA810902143459B500AADE2C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CA810907143459B500AADE2C /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA810908143459B500AADE2C /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		CA81090D143459B600AADE2C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA81090E143459B600AADE2C /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA810910143459B600AADE2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CA810911143459B600AADE2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CA810913143459B600AADE2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LessDJ/LessDJ-Prefix.pch";
+				INFOPLIST_FILE = "LessDJ/LessDJ-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CA810914143459B600AADE2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LessDJ/LessDJ-Prefix.pch";
+				INFOPLIST_FILE = "LessDJ/LessDJ-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA8108EE143459B500AADE2C /* Build configuration list for PBXProject "LessDJ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA810910143459B600AADE2C /* Debug */,
+				CA810911143459B600AADE2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA810912143459B600AADE2C /* Build configuration list for PBXNativeTarget "LessDJ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA810913143459B600AADE2C /* Debug */,
+				CA810914143459B600AADE2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA8108EB143459B500AADE2C /* Project object */;
+}
