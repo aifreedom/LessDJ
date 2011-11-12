@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<dictionary title="Dictionary">
+	<!--
+	<xi:include href="file:///System/Library/ScriptingDefinitions/CocoaStandard.sdef" xpointer="xpointer(/dictionary/suite)"/>
+     -->
+	<!-- our special scripting suite for this example -->
+	<suite name="Basic Suite" code="SScr" description="LessDJ application specific scripting facilities.">
+		<!-- any additions to the application class are done here.  note that
+         we have specified that we inherit all of the properties from the standard
+         application class definition, and we use the same four character code from
+         that definition (see the application class definition above).  -->
+		<class name="DJItem" code="djit" description="DJItem">
+			<cocoa class="DBItem"/>
+			<property name="album" code="djal" description="album" type="text" access="r"/>
+			<property name="artist" code="djar" description="artist" type="text" access="r"/>
+			<property name="title" code="djti" description="name of song" type="text" access="r"/>
+			<property name="length" code="djle" description="length of song" type="integer" access="r"/>
+		</class>
+		<class name="application" code="capp" description="Our simple application class." inherits="application">
+			<cocoa class="NSApplication"/>
+			<property name="song" code="DJso" description="current song" type="DJItem" access="r">
+				<cocoa key="currentSongItem"/>
+			</property>
+			<property name="location" code="DJlo" description="current song position" type="number" access="r">
+				<cocoa key="currentLocation"/>
+			</property>
+			<responds-to command="quitscript">
+				<cocoa method="handleQuitScriptCommand:"/>
+			</responds-to>
+            <responds-to command="quit">
+				<cocoa method="terminate:"/>
+			</responds-to>
+		</class>
+	</suite>
+</dictionary>

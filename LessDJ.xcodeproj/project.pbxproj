@@ -7,28 +7,112 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA341BC41467D15B0007160C /* NSDictionary+NonNull.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341B8A1467D15B0007160C /* NSDictionary+NonNull.m */; };
+		CA341BC51467D15B0007160C /* NSDictionary+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341B8C1467D15B0007160C /* NSDictionary+URL.m */; };
+		CA341BC61467D15B0007160C /* NSString+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341B8E1467D15B0007160C /* NSString+Addition.m */; };
+		CA341BCC1467D15B0007160C /* PLGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341B9D1467D15B0007160C /* PLGlobal.m */; };
+		CA341BCD1467D15B0007160C /* PLOG.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341B9F1467D15B0007160C /* PLOG.m */; };
+		CA341BCE1467D15B0007160C /* PLSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BA11467D15B0007160C /* PLSettings.m */; };
+		CA341BCF1467D15B0007160C /* T.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BA41467D15B0007160C /* T.m */; };
+		CA341BD01467D15B0007160C /* PLHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BA71467D15B0007160C /* PLHttpClient.m */; };
+		CA341BD11467D15B0007160C /* PLHttpConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BA91467D15B0007160C /* PLHttpConfig.m */; };
+		CA341BD21467D15B0007160C /* PLHttpQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BAB1467D15B0007160C /* PLHttpQueue.m */; };
+		CA341BE01467D22F0007160C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA341BDF1467D22F0007160C /* QuartzCore.framework */; };
+		CA341BED1467D4100007160C /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BE41467D4100007160C /* NSObject+SBJSON.m */; };
+		CA341BEE1467D4100007160C /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BE61467D4100007160C /* NSString+SBJSON.m */; };
+		CA341BEF1467D4100007160C /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BE81467D4100007160C /* SBJsonBase.m */; };
+		CA341BF01467D4100007160C /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BEA1467D4100007160C /* SBJsonParser.m */; };
+		CA341BF11467D4100007160C /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BEC1467D4100007160C /* SBJsonWriter.m */; };
+		CA341BF41467D46B0007160C /* DBChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BF31467D46B0007160C /* DBChannel.m */; };
+		CA341BF71467D48E0007160C /* DBList.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BF61467D48E0007160C /* DBList.m */; };
+		CA341BFA1467D4B30007160C /* DBFM.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BF91467D4B30007160C /* DBFM.m */; };
+		CA341C0A1467E39B0007160C /* PLHttpBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341C091467E39B0007160C /* PLHttpBlock.m */; };
+		CA341C0F146802CC0007160C /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341C0E146802CC0007160C /* AudioPlayer.m */; };
+		CA341C12146803010007160C /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341C11146803010007160C /* AudioStreamer.m */; };
 		CA8108F9143459B500AADE2C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8108F8143459B500AADE2C /* Cocoa.framework */; };
 		CA810903143459B500AADE2C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA810901143459B500AADE2C /* InfoPlist.strings */; };
 		CA810905143459B500AADE2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA810904143459B500AADE2C /* main.m */; };
 		CA810909143459B500AADE2C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CA810907143459B500AADE2C /* Credits.rtf */; };
 		CA81090C143459B500AADE2C /* LessDJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA81090B143459B500AADE2C /* LessDJAppDelegate.m */; };
 		CA81090F143459B600AADE2C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA81090D143459B600AADE2C /* MainMenu.xib */; };
+		CA8109731434628800AADE2C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8109721434628800AADE2C /* AudioToolbox.framework */; };
+		CAC4B1BD146CDB4A0017EA73 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC4B1BC146CDB4A0017EA73 /* CoreMedia.framework */; };
+		CAC4B1D5146D08CD0017EA73 /* LessDJ.sdef in Resources */ = {isa = PBXBuildFile; fileRef = CAC4B1D4146D08CD0017EA73 /* LessDJ.sdef */; };
+		CAC4B1D9146D09860017EA73 /* NSApplication+BridgeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC4B1D8146D09860017EA73 /* NSApplication+BridgeSupport.m */; };
+		CAC4B1DC146D117B0017EA73 /* Element.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC4B1DB146D117A0017EA73 /* Element.m */; };
+		CAD051C6146BD276005E8929 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD051C5146BD276005E8929 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA341B881467D15B0007160C /* NSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSAdditions.h; sourceTree = "<group>"; };
+		CA341B891467D15B0007160C /* NSDictionary+NonNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NonNull.h"; sourceTree = "<group>"; };
+		CA341B8A1467D15B0007160C /* NSDictionary+NonNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NonNull.m"; sourceTree = "<group>"; };
+		CA341B8B1467D15B0007160C /* NSDictionary+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+URL.h"; sourceTree = "<group>"; };
+		CA341B8C1467D15B0007160C /* NSDictionary+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+URL.m"; sourceTree = "<group>"; };
+		CA341B8D1467D15B0007160C /* NSString+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Addition.h"; sourceTree = "<group>"; };
+		CA341B8E1467D15B0007160C /* NSString+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Addition.m"; sourceTree = "<group>"; };
+		CA341B9B1467D15B0007160C /* PLCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCore.h; sourceTree = "<group>"; };
+		CA341B9C1467D15B0007160C /* PLGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLGlobal.h; sourceTree = "<group>"; };
+		CA341B9D1467D15B0007160C /* PLGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLGlobal.m; sourceTree = "<group>"; };
+		CA341B9E1467D15B0007160C /* PLOG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLOG.h; sourceTree = "<group>"; };
+		CA341B9F1467D15B0007160C /* PLOG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLOG.m; sourceTree = "<group>"; };
+		CA341BA01467D15B0007160C /* PLSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLSettings.h; sourceTree = "<group>"; };
+		CA341BA11467D15B0007160C /* PLSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLSettings.m; sourceTree = "<group>"; };
+		CA341BA21467D15B0007160C /* PlutoLand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlutoLand.h; sourceTree = "<group>"; };
+		CA341BA31467D15B0007160C /* T.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = T.h; sourceTree = "<group>"; };
+		CA341BA41467D15B0007160C /* T.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T.m; sourceTree = "<group>"; };
+		CA341BA61467D15B0007160C /* PLHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLHttpClient.h; sourceTree = "<group>"; };
+		CA341BA71467D15B0007160C /* PLHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLHttpClient.m; sourceTree = "<group>"; };
+		CA341BA81467D15B0007160C /* PLHttpConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLHttpConfig.h; sourceTree = "<group>"; };
+		CA341BA91467D15B0007160C /* PLHttpConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLHttpConfig.m; sourceTree = "<group>"; };
+		CA341BAA1467D15B0007160C /* PLHttpQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLHttpQueue.h; sourceTree = "<group>"; };
+		CA341BAB1467D15B0007160C /* PLHttpQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLHttpQueue.m; sourceTree = "<group>"; };
+		CA341BDF1467D22F0007160C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CA341BE21467D4100007160C /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		CA341BE31467D4100007160C /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		CA341BE41467D4100007160C /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		CA341BE51467D4100007160C /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		CA341BE61467D4100007160C /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		CA341BE71467D4100007160C /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		CA341BE81467D4100007160C /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		CA341BE91467D4100007160C /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		CA341BEA1467D4100007160C /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		CA341BEB1467D4100007160C /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		CA341BEC1467D4100007160C /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		CA341BF21467D46B0007160C /* DBChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBChannel.h; sourceTree = "<group>"; };
+		CA341BF31467D46B0007160C /* DBChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBChannel.m; sourceTree = "<group>"; };
+		CA341BF51467D48E0007160C /* DBList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBList.h; sourceTree = "<group>"; };
+		CA341BF61467D48E0007160C /* DBList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBList.m; sourceTree = "<group>"; };
+		CA341BF81467D4B30007160C /* DBFM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBFM.h; sourceTree = "<group>"; };
+		CA341BF91467D4B30007160C /* DBFM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBFM.m; sourceTree = "<group>"; };
+		CA341C081467E39A0007160C /* PLHttpBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLHttpBlock.h; sourceTree = "<group>"; };
+		CA341C091467E39B0007160C /* PLHttpBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLHttpBlock.m; sourceTree = "<group>"; };
+		CA341C0D146802CC0007160C /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
+		CA341C0E146802CC0007160C /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
+		CA341C10146803010007160C /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioStreamer.h; path = AudioStreamer/Classes/AudioStreamer.h; sourceTree = SOURCE_ROOT; };
+		CA341C11146803010007160C /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioStreamer.m; path = AudioStreamer/Classes/AudioStreamer.m; sourceTree = SOURCE_ROOT; };
 		CA8108F4143459B500AADE2C /* LessDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LessDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8108F8143459B500AADE2C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CA8108FB143459B500AADE2C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		CA8108FC143459B500AADE2C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		CA8108FD143459B500AADE2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		CA810900143459B500AADE2C /* LessDJ-Info.plist */ = {isa = PBXFileReference; path = "LessDJ-Info.plist"; sourceTree = "<group>"; };
+		CA810900143459B500AADE2C /* LessDJ-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LessDJ-Info.plist"; sourceTree = "<group>"; };
 		CA810902143459B500AADE2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CA810904143459B500AADE2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CA810906143459B500AADE2C /* LessDJ-Prefix.pch */ = {isa = PBXFileReference; path = "LessDJ-Prefix.pch"; sourceTree = "<group>"; };
+		CA810906143459B500AADE2C /* LessDJ-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LessDJ-Prefix.pch"; sourceTree = "<group>"; };
 		CA810908143459B500AADE2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		CA81090A143459B500AADE2C /* LessDJAppDelegate.h */ = {isa = PBXFileReference; path = LessDJAppDelegate.h; sourceTree = "<group>"; };
+		CA81090A143459B500AADE2C /* LessDJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LessDJAppDelegate.h; sourceTree = "<group>"; };
 		CA81090B143459B500AADE2C /* LessDJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LessDJAppDelegate.m; sourceTree = "<group>"; };
 		CA81090E143459B600AADE2C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CA81091814345B6D00AADE2C /* douban.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = douban.mdown; sourceTree = "<group>"; };
+		CA8109721434628800AADE2C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CAC4B1BC146CDB4A0017EA73 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		CAC4B1D4146D08CD0017EA73 /* LessDJ.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LessDJ.sdef; sourceTree = "<group>"; };
+		CAC4B1D7146D09860017EA73 /* NSApplication+BridgeSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSApplication+BridgeSupport.h"; sourceTree = "<group>"; };
+		CAC4B1D8146D09860017EA73 /* NSApplication+BridgeSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSApplication+BridgeSupport.m"; sourceTree = "<group>"; };
+		CAC4B1DA146D117A0017EA73 /* Element.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Element.h; sourceTree = "<group>"; };
+		CAC4B1DB146D117A0017EA73 /* Element.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Element.m; sourceTree = "<group>"; };
+		CAD051C5146BD276005E8929 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +120,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC4B1BD146CDB4A0017EA73 /* CoreMedia.framework in Frameworks */,
+				CAD051C6146BD276005E8929 /* AVFoundation.framework in Frameworks */,
+				CA341BE01467D22F0007160C /* QuartzCore.framework in Frameworks */,
+				CA8109731434628800AADE2C /* AudioToolbox.framework in Frameworks */,
 				CA8108F9143459B500AADE2C /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,9 +131,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA341B861467D15B0007160C /* PlutoLand */ = {
+			isa = PBXGroup;
+			children = (
+				CA341B871467D15B0007160C /* Categories */,
+				CA341B9A1467D15B0007160C /* Global */,
+				CA341BA51467D15B0007160C /* HttpClient */,
+			);
+			path = PlutoLand;
+			sourceTree = PLUTO_LAND_PATH;
+		};
+		CA341B871467D15B0007160C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CA341B881467D15B0007160C /* NSAdditions.h */,
+				CA341B891467D15B0007160C /* NSDictionary+NonNull.h */,
+				CA341B8A1467D15B0007160C /* NSDictionary+NonNull.m */,
+				CA341B8B1467D15B0007160C /* NSDictionary+URL.h */,
+				CA341B8C1467D15B0007160C /* NSDictionary+URL.m */,
+				CA341B8D1467D15B0007160C /* NSString+Addition.h */,
+				CA341B8E1467D15B0007160C /* NSString+Addition.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		CA341B9A1467D15B0007160C /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				CA341B9B1467D15B0007160C /* PLCore.h */,
+				CA341B9C1467D15B0007160C /* PLGlobal.h */,
+				CA341B9D1467D15B0007160C /* PLGlobal.m */,
+				CA341B9E1467D15B0007160C /* PLOG.h */,
+				CA341B9F1467D15B0007160C /* PLOG.m */,
+				CA341BA01467D15B0007160C /* PLSettings.h */,
+				CA341BA11467D15B0007160C /* PLSettings.m */,
+				CA341BA21467D15B0007160C /* PlutoLand.h */,
+				CA341BA31467D15B0007160C /* T.h */,
+				CA341BA41467D15B0007160C /* T.m */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		CA341BA51467D15B0007160C /* HttpClient */ = {
+			isa = PBXGroup;
+			children = (
+				CA341BA61467D15B0007160C /* PLHttpClient.h */,
+				CA341BA71467D15B0007160C /* PLHttpClient.m */,
+				CA341BA81467D15B0007160C /* PLHttpConfig.h */,
+				CA341BA91467D15B0007160C /* PLHttpConfig.m */,
+				CA341BAA1467D15B0007160C /* PLHttpQueue.h */,
+				CA341BAB1467D15B0007160C /* PLHttpQueue.m */,
+			);
+			path = HttpClient;
+			sourceTree = "<group>";
+		};
+		CA341BE11467D4100007160C /* SBJSON */ = {
+			isa = PBXGroup;
+			children = (
+				CA341BE21467D4100007160C /* JSON.h */,
+				CA341BE31467D4100007160C /* NSObject+SBJSON.h */,
+				CA341BE41467D4100007160C /* NSObject+SBJSON.m */,
+				CA341BE51467D4100007160C /* NSString+SBJSON.h */,
+				CA341BE61467D4100007160C /* NSString+SBJSON.m */,
+				CA341BE71467D4100007160C /* SBJsonBase.h */,
+				CA341BE81467D4100007160C /* SBJsonBase.m */,
+				CA341BE91467D4100007160C /* SBJsonParser.h */,
+				CA341BEA1467D4100007160C /* SBJsonParser.m */,
+				CA341BEB1467D4100007160C /* SBJsonWriter.h */,
+				CA341BEC1467D4100007160C /* SBJsonWriter.m */,
+			);
+			path = SBJSON;
+			sourceTree = "<group>";
+		};
+		CA341C0C146802AF0007160C /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				CA341C10146803010007160C /* AudioStreamer.h */,
+				CA341C11146803010007160C /* AudioStreamer.m */,
+				CA341C0D146802CC0007160C /* AudioPlayer.h */,
+				CA341C0E146802CC0007160C /* AudioPlayer.m */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
 		CA8108E9143459B500AADE2C = {
 			isa = PBXGroup;
 			children = (
+				CA341BE11467D4100007160C /* SBJSON */,
+				CA341B861467D15B0007160C /* PlutoLand */,
 				CA8108FE143459B500AADE2C /* LessDJ */,
 				CA8108F7143459B500AADE2C /* Frameworks */,
 				CA8108F5143459B500AADE2C /* Products */,
@@ -63,6 +236,10 @@
 		CA8108F7143459B500AADE2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CAC4B1BC146CDB4A0017EA73 /* CoreMedia.framework */,
+				CAD051C5146BD276005E8929 /* AVFoundation.framework */,
+				CA341BDF1467D22F0007160C /* QuartzCore.framework */,
+				CA8109721434628800AADE2C /* AudioToolbox.framework */,
 				CA8108F8143459B500AADE2C /* Cocoa.framework */,
 				CA8108FA143459B500AADE2C /* Other Frameworks */,
 			);
@@ -82,10 +259,18 @@
 		CA8108FE143459B500AADE2C /* LessDJ */ = {
 			isa = PBXGroup;
 			children = (
+				CAC4B1DA146D117A0017EA73 /* Element.h */,
+				CAC4B1DB146D117A0017EA73 /* Element.m */,
+				CA341C0C146802AF0007160C /* Player */,
+				CA81091714345B6D00AADE2C /* DoubanFM_List */,
 				CA81090A143459B500AADE2C /* LessDJAppDelegate.h */,
 				CA81090B143459B500AADE2C /* LessDJAppDelegate.m */,
 				CA81090D143459B600AADE2C /* MainMenu.xib */,
 				CA8108FF143459B500AADE2C /* Supporting Files */,
+				CA341C081467E39A0007160C /* PLHttpBlock.h */,
+				CA341C091467E39B0007160C /* PLHttpBlock.m */,
+				CAC4B1D7146D09860017EA73 /* NSApplication+BridgeSupport.h */,
+				CAC4B1D8146D09860017EA73 /* NSApplication+BridgeSupport.m */,
 			);
 			path = LessDJ;
 			sourceTree = "<group>";
@@ -98,8 +283,23 @@
 				CA810904143459B500AADE2C /* main.m */,
 				CA810906143459B500AADE2C /* LessDJ-Prefix.pch */,
 				CA810907143459B500AADE2C /* Credits.rtf */,
+				CAC4B1D4146D08CD0017EA73 /* LessDJ.sdef */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CA81091714345B6D00AADE2C /* DoubanFM_List */ = {
+			isa = PBXGroup;
+			children = (
+				CA81091814345B6D00AADE2C /* douban.mdown */,
+				CA341BF21467D46B0007160C /* DBChannel.h */,
+				CA341BF31467D46B0007160C /* DBChannel.m */,
+				CA341BF51467D48E0007160C /* DBList.h */,
+				CA341BF61467D48E0007160C /* DBList.m */,
+				CA341BF81467D4B30007160C /* DBFM.h */,
+				CA341BF91467D4B30007160C /* DBFM.m */,
+			);
+			path = DoubanFM_List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +328,7 @@
 		CA8108EB143459B500AADE2C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "xu han";
 			};
 			buildConfigurationList = CA8108EE143459B500AADE2C /* Build configuration list for PBXProject "LessDJ" */;
@@ -155,6 +356,7 @@
 				CA810903143459B500AADE2C /* InfoPlist.strings in Resources */,
 				CA810909143459B500AADE2C /* Credits.rtf in Resources */,
 				CA81090F143459B600AADE2C /* MainMenu.xib in Resources */,
+				CAC4B1D5146D08CD0017EA73 /* LessDJ.sdef in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +369,29 @@
 			files = (
 				CA810905143459B500AADE2C /* main.m in Sources */,
 				CA81090C143459B500AADE2C /* LessDJAppDelegate.m in Sources */,
+				CA341BC41467D15B0007160C /* NSDictionary+NonNull.m in Sources */,
+				CA341BC51467D15B0007160C /* NSDictionary+URL.m in Sources */,
+				CA341BC61467D15B0007160C /* NSString+Addition.m in Sources */,
+				CA341BCC1467D15B0007160C /* PLGlobal.m in Sources */,
+				CA341BCD1467D15B0007160C /* PLOG.m in Sources */,
+				CA341BCE1467D15B0007160C /* PLSettings.m in Sources */,
+				CA341BCF1467D15B0007160C /* T.m in Sources */,
+				CA341BD01467D15B0007160C /* PLHttpClient.m in Sources */,
+				CA341BD11467D15B0007160C /* PLHttpConfig.m in Sources */,
+				CA341BD21467D15B0007160C /* PLHttpQueue.m in Sources */,
+				CA341BED1467D4100007160C /* NSObject+SBJSON.m in Sources */,
+				CA341BEE1467D4100007160C /* NSString+SBJSON.m in Sources */,
+				CA341BEF1467D4100007160C /* SBJsonBase.m in Sources */,
+				CA341BF01467D4100007160C /* SBJsonParser.m in Sources */,
+				CA341BF11467D4100007160C /* SBJsonWriter.m in Sources */,
+				CA341BF41467D46B0007160C /* DBChannel.m in Sources */,
+				CA341BF71467D48E0007160C /* DBList.m in Sources */,
+				CA341BFA1467D4B30007160C /* DBFM.m in Sources */,
+				CA341C0A1467E39B0007160C /* PLHttpBlock.m in Sources */,
+				CA341C0F146802CC0007160C /* AudioPlayer.m in Sources */,
+				CA341C12146803010007160C /* AudioStreamer.m in Sources */,
+				CAC4B1D9146D09860017EA73 /* NSApplication+BridgeSupport.m in Sources */,
+				CAC4B1DC146D117B0017EA73 /* Element.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +442,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
@@ -237,7 +462,7 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
@@ -286,6 +511,7 @@
 				CA810914143459B600AADE2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

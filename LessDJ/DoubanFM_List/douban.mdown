@@ -1,0 +1,44 @@
+http://img3.douban.com/lpic/s4629939.jpg
+
+
+list
+----------
+http://douban.fm/j/mine/playlist?type=n&channel=%d
+
+type: [benpsur] , RPC函数指示:
+b: bye(?), 播放以删除终止. 长报告
+e: end, 返回:'"OK"', 报告歌曲播放完毕, 短报告
+n: new, 返回新播放列表, 无其余必备参数(uid?). 长报告
+p: playing(?), 单首歌曲播放开始且播放列表已空时发送, 长报告, 疑似是专门为平淡地获取播放列表而设定的.
+s: skip, 用户点击”下一首“时即时报告
+u: unlike, 将sid的歌曲取消喜欢
+r: rated(?), 喜欢一首歌时即时报告
+uid: 用户在豆瓣的UID, 如果与请求中的cookie所带uid值不同可能会收到回复{"r":1,/*...这里忘记了...*/}
+r: random, JavaScript中Math.random()自然产生的随机数
+h: history, 格式为'|'分割的 sid + ':' + /[psbr]/  避免短时间内出现重复
+sid: Song ID
+aid: Album ID
+rest: '|'分割的sid. 已获取的播放列表中尚未播放的曲目, 避免短时间内出现重复.
+status: 播放器状态, 'p'代表正在播放中.
+du: 用户持续无操作时间, 疑似用于下发广告.
+
+channel list
+-----
+https://www.douban.com/j/app/radio/channels
+
+
+other
+
+https://www.douban.com/j/app/radio/channels?app_name=radio_iphone&version=20&user_id=%@&expire=%@&token=%@
+https://www.douban.com/j/app/radio/people?app_name=radio_iphone&version=20&type=%@&channel=%d&h=%@&du=%d&sid=%d&user_id=%@&expire=%@&token=%@
+https://www.douban.com/j/app/login?app_name=radio_iphone&version=20&email=%@&password=%@
+
+
+test songs
+
+http://mr4.douban.com/201109291549/de1245b39e22333bee240e5b1688f5e0/view/song/small/p965721.mp3
+http://mr3.douban.com/201111071617/6f6b860782a7050ced4cc456e9f13c2f/rda/aud10177.mp3
+http://mr3.douban.com/201111071617/c44ed2d3e38e8d541b9f047e4a4cb2be/view/song/small/p1644530.mp3
+
+
+http://mr4.douban.com/201111092151/cb870fbc2cea1eeb365b93071d39a609/view/song/small/p1563405.mp3

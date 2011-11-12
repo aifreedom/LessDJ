@@ -1,0 +1,3 @@
+[submodule "AudioStreamer"]
+	path = AudioStreamer
+	url = https://github.com/rayh/AudioStreamer.git
