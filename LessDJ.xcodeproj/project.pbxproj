@@ -23,12 +23,9 @@
 		CA341BEF1467D4100007160C /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BE81467D4100007160C /* SBJsonBase.m */; };
 		CA341BF01467D4100007160C /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BEA1467D4100007160C /* SBJsonParser.m */; };
 		CA341BF11467D4100007160C /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BEC1467D4100007160C /* SBJsonWriter.m */; };
-		CA341BF41467D46B0007160C /* DBChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BF31467D46B0007160C /* DBChannel.m */; };
 		CA341BF71467D48E0007160C /* DBList.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BF61467D48E0007160C /* DBList.m */; };
 		CA341BFA1467D4B30007160C /* DBFM.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BF91467D4B30007160C /* DBFM.m */; };
 		CA341C0A1467E39B0007160C /* PLHttpBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341C091467E39B0007160C /* PLHttpBlock.m */; };
-		CA341C0F146802CC0007160C /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341C0E146802CC0007160C /* AudioPlayer.m */; };
-		CA341C12146803010007160C /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341C11146803010007160C /* AudioStreamer.m */; };
 		CA8108F9143459B500AADE2C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8108F8143459B500AADE2C /* Cocoa.framework */; };
 		CA810903143459B500AADE2C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA810901143459B500AADE2C /* InfoPlist.strings */; };
 		CA810905143459B500AADE2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA810904143459B500AADE2C /* main.m */; };
@@ -79,18 +76,12 @@
 		CA341BEA1467D4100007160C /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
 		CA341BEB1467D4100007160C /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		CA341BEC1467D4100007160C /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
-		CA341BF21467D46B0007160C /* DBChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBChannel.h; sourceTree = "<group>"; };
-		CA341BF31467D46B0007160C /* DBChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBChannel.m; sourceTree = "<group>"; };
 		CA341BF51467D48E0007160C /* DBList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBList.h; sourceTree = "<group>"; };
 		CA341BF61467D48E0007160C /* DBList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBList.m; sourceTree = "<group>"; };
 		CA341BF81467D4B30007160C /* DBFM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBFM.h; sourceTree = "<group>"; };
 		CA341BF91467D4B30007160C /* DBFM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBFM.m; sourceTree = "<group>"; };
 		CA341C081467E39A0007160C /* PLHttpBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLHttpBlock.h; sourceTree = "<group>"; };
 		CA341C091467E39B0007160C /* PLHttpBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLHttpBlock.m; sourceTree = "<group>"; };
-		CA341C0D146802CC0007160C /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
-		CA341C0E146802CC0007160C /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
-		CA341C10146803010007160C /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioStreamer.h; path = AudioStreamer/Classes/AudioStreamer.h; sourceTree = SOURCE_ROOT; };
-		CA341C11146803010007160C /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioStreamer.m; path = AudioStreamer/Classes/AudioStreamer.m; sourceTree = SOURCE_ROOT; };
 		CA8108F4143459B500AADE2C /* LessDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LessDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8108F8143459B500AADE2C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CA8108FB143459B500AADE2C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -203,17 +194,6 @@
 			path = SBJSON;
 			sourceTree = "<group>";
 		};
-		CA341C0C146802AF0007160C /* Player */ = {
-			isa = PBXGroup;
-			children = (
-				CA341C10146803010007160C /* AudioStreamer.h */,
-				CA341C11146803010007160C /* AudioStreamer.m */,
-				CA341C0D146802CC0007160C /* AudioPlayer.h */,
-				CA341C0E146802CC0007160C /* AudioPlayer.m */,
-			);
-			path = Player;
-			sourceTree = "<group>";
-		};
 		CA8108E9143459B500AADE2C = {
 			isa = PBXGroup;
 			children = (
@@ -261,7 +241,6 @@
 			children = (
 				CAC4B1DA146D117A0017EA73 /* Element.h */,
 				CAC4B1DB146D117A0017EA73 /* Element.m */,
-				CA341C0C146802AF0007160C /* Player */,
 				CA81091714345B6D00AADE2C /* DoubanFM_List */,
 				CA81090A143459B500AADE2C /* LessDJAppDelegate.h */,
 				CA81090B143459B500AADE2C /* LessDJAppDelegate.m */,
@@ -292,8 +271,6 @@
 			isa = PBXGroup;
 			children = (
 				CA81091814345B6D00AADE2C /* douban.mdown */,
-				CA341BF21467D46B0007160C /* DBChannel.h */,
-				CA341BF31467D46B0007160C /* DBChannel.m */,
 				CA341BF51467D48E0007160C /* DBList.h */,
 				CA341BF61467D48E0007160C /* DBList.m */,
 				CA341BF81467D4B30007160C /* DBFM.h */,
@@ -384,12 +361,9 @@
 				CA341BEF1467D4100007160C /* SBJsonBase.m in Sources */,
 				CA341BF01467D4100007160C /* SBJsonParser.m in Sources */,
 				CA341BF11467D4100007160C /* SBJsonWriter.m in Sources */,
-				CA341BF41467D46B0007160C /* DBChannel.m in Sources */,
 				CA341BF71467D48E0007160C /* DBList.m in Sources */,
 				CA341BFA1467D4B30007160C /* DBFM.m in Sources */,
 				CA341C0A1467E39B0007160C /* PLHttpBlock.m in Sources */,
-				CA341C0F146802CC0007160C /* AudioPlayer.m in Sources */,
-				CA341C12146803010007160C /* AudioStreamer.m in Sources */,
 				CAC4B1D9146D09860017EA73 /* NSApplication+BridgeSupport.m in Sources */,
 				CAC4B1DC146D117B0017EA73 /* Element.m in Sources */,
 			);

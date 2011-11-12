@@ -8,7 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 #import "DBFM.h"
-#import "AudioPlayer.h"
 #import <AVFoundation/AVFoundation.h>
 
 
@@ -23,44 +22,46 @@
     options to launch LL at startup
  */
 
-@class AudioStreamer;
-@class LastFMRadio, LastFMTrack;
+//the delay operations
+typedef enum {
+    OperationNone = 0,
+    OperationNext,
+    OperationChangeChannel
+}DJOperation;
+
+
 @class DBItem;
 @interface LessDJAppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow *window;
-    DBFM* fm;
-    AudioPlayer* player;
     
-    LastFMRadio* radio;
-    AudioStreamer *streamer;
-	NSTimer *progressUpdateTimer;
-    float volume;
+    DBFM*       fm;
+	NSTimer*    progressUpdateTimer;
+    float       volume;    
+    AVPlayer*   avplayer;       //using avqueuePlayer -insertItem will freeze app in a while(by placing it on background it not works at all)
+    DBItem*     curItem;
     
-    LastFMTrack* track;
-    AVPlayer* avplayer;
-    AVQueuePlayer* avqplayer;
-    
-    DBItem* curItem;
+    DJOperation delayOperation; //some operation need callback to handle delay responses
 }
 
-@property(retain)DBItem* curItem;
-
 @property(nonatomic,retain)DBFM* fm;
-@property (assign) IBOutlet NSWindow *window;
 
-- (IBAction)playNext:(id)sender;
+@property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSSlider *progressSlider;
-- (IBAction)onBtnPlay:(id)sender;
-- (IBAction)onBtnPause:(id)sender;
 @property (assign) IBOutlet NSTextField *labelPosition;
 @property (assign) IBOutlet NSTextField *labelTitle;
 @property (assign) IBOutlet NSTextField *labelArtist;
+
+- (IBAction)playNext:(id)sender;
+- (IBAction)onBtnPlay:(id)sender;
+- (IBAction)onBtnPause:(id)sender;
 - (IBAction)onVolumeChanged:(id)sender;
 - (IBAction)onPopUpChanged:(id)sender;
-- (void)destroyStreamer;
-- (void)createStreamer;
-
+- (IBAction)onProgressChanged:(id)sender;
 
 @property(nonatomic,readonly) CGFloat songLocation;
+@property(retain)DBItem* curItem;
+
+- (void)updateProgressTimerState:(BOOL)isOn;
+- (void)addAVPlayerNotifyCallBack;
 
 @end

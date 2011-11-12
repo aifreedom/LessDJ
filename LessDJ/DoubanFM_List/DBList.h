@@ -11,8 +11,18 @@
 #import <Foundation/Foundation.h>
 #import "PLHttpClient.h"
 #import "PLHttpBlock.h"
-@class DBChannel, DBItem;
 
+@interface DBChannel : NSObject{
+    NSDictionary* _dict;
+}
+- (id)initWithDict:(NSDictionary*)dict;
+@property(readonly) NSString* nameCN;
+@property(readonly) NSString* nameEN;
+@property(readonly) int       mid;
+@property(readonly) NSURL     *url;
+@end
+
+@class DBItem;
 @interface DBList : NSObject
 {
     DBChannel* _channel;

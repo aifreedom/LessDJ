@@ -8,8 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum{
+//    DBResponseTypeInvalid
+    DBResponseTypeChannel,
+    DBResponseTypeList
+}DBResponseType;
+
+
 @class DBChannel, DBList, DBItem;
 @class PLHttpBlock;
+@protocol DBFMDelegate;
 @interface DBFM : NSObject
 {
     DBList* _list;
@@ -20,9 +28,11 @@
     DBChannel* _currentChannel;
     
     NSMutableArray* content;
+    
+    id _delegate;
 }
 
-
+@property(nonatomic,assign) id delegate;
 
 @property(nonatomic,retain) NSMutableArray* channels;
 @property(nonatomic,readonly) DBChannel* currentChannel;
@@ -38,8 +48,14 @@
 
 
 
-
 ////////////////////////////////////////////////////////////////////////////////////
 @interface DBFM (APIService)
 + (NSDictionary*)parseContent:(NSString*)responseContent withError:(NSError**)error;
 @end
+
+
+@protocol DBFMDelegate <NSObject>
+@optional
+- (void)dbfmResponseReceived:(DBResponseType)type;
+@end
+

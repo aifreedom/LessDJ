@@ -8,12 +8,12 @@
 
 #import "DBFM.h"
 #import "DBList.h"
-#import "DBChannel.h"
 
 #import "JSON.h"
 #import "PLHttpBlock.h"
 @implementation DBFM
 @synthesize list = _list, channels = _channels, currentChannel= _currentChannel;
+@synthesize delegate = _delegate;
 
 - (id)init{
     self = [super init];
