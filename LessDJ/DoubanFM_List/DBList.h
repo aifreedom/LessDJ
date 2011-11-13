@@ -22,9 +22,10 @@
 @property(readonly) NSURL     *url;
 @end
 
-@class DBItem;
+@class DBItem, DBFM;
 @interface DBList : NSObject
 {
+    DBFM*     _fm;          // weak linked
     DBChannel* _channel;
     NSMutableArray* _items;
     PLHttpBlock* _client;
@@ -32,6 +33,7 @@
         BOOL skipAD;
     }flag;
 }
+- (void)setFM:(DBFM*)fm;
 - (void)reset;
 - (void)loadMore;
 
@@ -51,6 +53,7 @@
 @property(readonly) NSString* artist;
 @property(readonly) NSString* title;
 @property(readonly) NSURL*    albumArtworkURL;
+@property(readonly) NSURL*    albumArtworkLargeURL;
 @property(readonly) NSURL*    songURL;
 @property(readonly) int       length;
 //- (NSScriptObjectSpecifier *)objectSpecifier;

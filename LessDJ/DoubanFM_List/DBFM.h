@@ -11,7 +11,7 @@
 typedef enum{
 //    DBResponseTypeInvalid
     DBResponseTypeChannel,
-    DBResponseTypeList
+    DBResponseTypeSongList
 }DBResponseType;
 
 
@@ -27,9 +27,7 @@ typedef enum{
     
     DBChannel* _currentChannel;
     
-    NSMutableArray* content;
-    
-    id _delegate;
+    id<DBFMDelegate> _delegate;
 }
 
 @property(nonatomic,assign) id delegate;
@@ -55,7 +53,7 @@ typedef enum{
 
 
 @protocol DBFMDelegate <NSObject>
-@optional
-- (void)dbfmResponseReceived:(DBResponseType)type;
+@required
+- (void)dbfmResponseReceived:(DBResponseType)type state:(BOOL)isSuccess;
 @end
 

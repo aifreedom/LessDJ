@@ -22,13 +22,13 @@
 @synthesize curItem;
 
 
+#pragma mark - App Life Cycle
 
-/* about application terminate
-  callback on applicationWillTerminate and then sleep thread not works (seems like it will be killed by app)
- */
 - (void)killApp
 {
-//    NSLog(@"should kill end");
+    /* Note: application terminate
+     callback on applicationWillTerminate and then sleep thread not works (seems like it will be killed by app)
+     */
     [NSApp replyToApplicationShouldTerminate:YES];
 }
 
@@ -49,6 +49,21 @@
     [self updateProgressTimerState:NO];
 	[super dealloc];
 }
+
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+{
+    
+    self.fm = [[[DBFM alloc] init] autorelease];
+    fm.delegate = self;
+    delayOperation = OperationNext;
+    [fm reloadList];
+    volume = 1;
+    
+    [self addAVPlayerNotifyCallBack];
+    [self updateProgressTimerState:YES];
+}
+
+#pragma mark - methods
 
 - (void)updateProgressTimerState:(BOOL)isOn
 {
@@ -85,15 +100,7 @@
 }
 
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-    self.fm = [[[DBFM alloc] init] autorelease];
-    [fm reloadList];
-    volume = 1;
-    
-    [self addAVPlayerNotifyCallBack];
-    [self updateProgressTimerState:YES];            
-}
+
 
 
 
@@ -108,12 +115,12 @@
         delayOperation = OperationNext;
         return;
     }
+    delayOperation = OperationNone;
     self.curItem = item;
     
     
     [labelTitle setStringValue:item.title];
-    [labelArtist setStringValue:item.artist];
-    
+    [labelArtist setStringValue:item.artist];    
 
     
     avplayer = [[AVPlayer alloc] initWithURL:item.songURL];
@@ -142,6 +149,7 @@
 }
 
 - (IBAction)onPopUpChanged:(NSPopUpButton*)sender {
+    delayOperation = OperationNext;
     [fm setChannelAtIndex:[sender indexOfSelectedItem]];
 }
 
@@ -187,7 +195,36 @@
 }
 
 
-#pragma mark -
+#pragma mark - FM Service Delegate
 
+- (void)dbfmResponseReceived:(DBResponseType)type state:(BOOL)isSuccess
+{
+    switch (type) {
+        case DBResponseTypeChannel:{
+            static int listRetryCount = 0;
+            if (isSuccess) {
+                listRetryCount = 0;
+                //TODO: should select desire item
+                delayOperation = OperationNext;
+                [fm setChannelAtIndex:0];   // test mode : select first item
+                
+                
+            }else{
+                listRetryCount += 1;
+                if (listRetryCount > 3) {
+                    PLOGERROR(@"fetch List failed ,try it later");
+                }else{
+                    [fm reloadList];
+                }                
+            }
+        }break;
+        case DBResponseTypeSongList:{
+            if (isSuccess && (delayOperation != OperationNone)) {
+                delayOperation = OperationNone;
+                [self playNext:nil];
+            }
+        }break;
+    }
+}
 
 @end

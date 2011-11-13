@@ -20,12 +20,7 @@
     _channels = [[NSMutableArray alloc] init];
     _history  = [[NSMutableArray alloc] init];
     _list     = [[DBList alloc] init];
-    
-    content = [[NSMutableArray alloc] init];
-    for (int i = 0; i<5; i++) {
-        NSDictionary*dict = [NSDictionary dictionaryWithObject:@"hh" forKey:@"nameCN"];
-        [content addObject:dict];
-    }
+    [_list setFM:self];
     return self;
 }
 
@@ -46,9 +41,12 @@
     [_clientList get:URL(@"http://www.douban.com/j/app/radio/channels")
                   ok:^(NSDictionary*d){
                       [self _updateList:d];
-                      
+                      [_delegate dbfmResponseReceived:DBResponseTypeChannel state:([_channels count] >0)];
                   }
-                fail:^(NSError*e){NSLog(@"e on list %@",e);}];
+                fail:^(NSError*e){
+//                    NSLog(@"e on list %@",e);
+                    [_delegate dbfmResponseReceived:DBResponseTypeChannel state:NO];
+                }];
 }
 
 - (void)_updateList:(NSDictionary*)dict
@@ -61,15 +59,16 @@
         [_channels removeAllObjects];        
         for (NSDictionary* item in chns) {            
             DBChannel* channel = [[DBChannel alloc] initWithDict:item];
-            [_channels addObject:channel];
+            
+            // skip personal channel
+            if (channel.mid != 0) {
+                [_channels addObject:channel];
+            }
+            
             [channel release];
         }
         [self didChangeValueForKey:@"channels"];
-        //todo: update ui
-        NSLog(@"get channels %lu",[_channels count]);
-        // test codes
-        [self setChannelAtIndex:3];
-        
+//        NSLog(@"get channels %lu",[_channels count]);
     }
 }
 

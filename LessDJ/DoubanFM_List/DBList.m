@@ -7,7 +7,7 @@
 //
 
 #import "DBList.h"
-
+#import "DBFM.h"
 @implementation DBChannel
 
 - (id)initWithDict:(NSDictionary*)dict
@@ -65,6 +65,11 @@
     return self;
 }
 
+- (void)setFM:(DBFM*)fm
+{
+    _fm = fm;
+}
+
 - (void)reset
 {
     [_items removeAllObjects];
@@ -73,10 +78,16 @@
 
 - (void)loadMore
 {
-    NSLog(@"load more");
+    PLOG(@"load more");
     [_client get:_channel.url
-              ok:^(NSDictionary*d){[self _parseResponseDict:d];}
-            fail:^(NSError*e){NSLog(@"list items failed %@",e);}];
+              ok:^(NSDictionary*d){
+                  [self _parseResponseDict:d];
+                  [_fm.delegate dbfmResponseReceived:DBResponseTypeSongList state:[_items count]>0];
+              }
+            fail:^(NSError*e){
+                PLOG(@"list items failed %@",e);
+                [_fm.delegate dbfmResponseReceived:DBResponseTypeSongList state:NO];
+            }];
 }
 
 - (void)updateWithChannelItem:(DBChannel*)channel
@@ -96,14 +107,12 @@
 - (DBItem*)selectItemAtIndex:(int)index
 {
     if (index >= [_items count] ) {
-        //TODO: should load more
         [self loadMore];
         return nil;
     }else{
         DBItem* item = [[_items objectAtIndex:index] retain]; 
         [_items removeObjectsInRange:NSMakeRange(0, index+1)];
         [self _checkListSize];
-        // todo: update list ui
         return [item autorelease];
     }
     
@@ -124,11 +133,11 @@
             DBItem* item = [[DBItem alloc] initWithDict:itemDict];
             if (!(flag.skipAD && item.length < kDBListADLength)) {
                 [_items addObject:item];
-            }            
+            }
+            //TODO: skip recently played songs
             [item release];
         }
-        NSLog(@"songs loaded %lu",[_items count]);
-        //todo: update UI -- more items loaded
+        PLOG(@"songs loaded %lu",[_items count]);
     }
 }
 
@@ -174,5 +183,14 @@
 }
 - (int)length{
     return [PLHashV(_dict, @"length") intValue];
+}
+
+- (NSURL*)albumArtworkLargeURL{
+    /* http://img3.douban.com/lpic/s4629939.jpg
+     mpic */
+    NSString* urlStr = PLHashV(_dict, @"picture");
+    NSString* bigSize= [urlStr stringByReplacingOccurrencesOfString:@"/mpic/"
+                                                         withString:@"/lpic/"];
+    return URL(bigSize);
 }
 @end

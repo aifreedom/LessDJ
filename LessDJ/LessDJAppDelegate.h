@@ -31,7 +31,7 @@ typedef enum {
 
 
 @class DBItem;
-@interface LessDJAppDelegate : NSObject <NSApplicationDelegate> {
+@interface LessDJAppDelegate : NSObject <NSApplicationDelegate, DBFMDelegate> {
     NSWindow *window;
     
     DBFM*       fm;
