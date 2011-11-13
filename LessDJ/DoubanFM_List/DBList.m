@@ -46,6 +46,7 @@
 
 @implementation DBList
 
+@synthesize items = _items;
 - (void)dealloc
 {
     PLSafeRelease(_channel);

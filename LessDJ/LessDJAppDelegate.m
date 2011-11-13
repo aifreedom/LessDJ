@@ -11,11 +11,14 @@
 
 #import "DBFM.h"
 #import "DBList.h"
+#import "NSImageLoader.h"
+#import "NSImageView+RemoteImage.h"
 
 @implementation LessDJAppDelegate
 @synthesize labelPosition;
 @synthesize labelTitle;
 @synthesize labelArtist;
+@synthesize viewArtwork;
 @synthesize progressSlider;
 
 @synthesize window, fm;
@@ -121,7 +124,8 @@
     
     [labelTitle setStringValue:item.title];
     [labelArtist setStringValue:item.artist];    
-
+    [viewArtwork loadImage:item.albumArtworkLargeURL
+               placeholder:@"default_cover"];
     
     avplayer = [[AVPlayer alloc] initWithURL:item.songURL];
     avplayer.volume = volume;
@@ -222,6 +226,15 @@
             if (isSuccess && (delayOperation != OperationNone)) {
                 delayOperation = OperationNone;
                 [self playNext:nil];
+            }
+            if (isSuccess) {
+                // precache images
+                
+                int size = MIN([fm.list.items count], 4);
+                for (int i = 0; i < size; i++) {
+                    DBItem* item = [fm.list.items objectAtIndex:i];
+                    [NSImageLoader fetch:item.albumArtworkLargeURL view:nil];
+                }
             }
         }break;
     }

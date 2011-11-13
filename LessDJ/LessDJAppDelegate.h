@@ -20,6 +20,8 @@
     (default play at start)
  
     options to launch LL at startup
+ 
+ TODO: fiex 网络不好 会卡住
  */
 
 //the delay operations
@@ -50,6 +52,7 @@ typedef enum {
 @property (assign) IBOutlet NSTextField *labelPosition;
 @property (assign) IBOutlet NSTextField *labelTitle;
 @property (assign) IBOutlet NSTextField *labelArtist;
+@property (assign) IBOutlet NSImageView *viewArtwork;
 
 - (IBAction)playNext:(id)sender;
 - (IBAction)onBtnPlay:(id)sender;

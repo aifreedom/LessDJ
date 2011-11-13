@@ -33,6 +33,7 @@
         BOOL skipAD;
     }flag;
 }
+@property(readonly) NSArray* items;
 - (void)setFM:(DBFM*)fm;
 - (void)reset;
 - (void)loadMore;
