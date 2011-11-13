@@ -186,6 +186,11 @@
     return [PLHashV(_dict, @"length") intValue];
 }
 
+- (NSString*) publicTime
+{
+    return PLHashV(_dict, @"public_time");
+}
+
 - (NSURL*)albumArtworkLargeURL{
     /* http://img3.douban.com/lpic/s4629939.jpg
      mpic */

@@ -19,6 +19,9 @@
 @synthesize labelTitle;
 @synthesize labelArtist;
 @synthesize viewArtwork;
+@synthesize viewChannels;
+@synthesize labelAlbum;
+@synthesize btnPlayState;
 @synthesize progressSlider;
 
 @synthesize window, fm;
@@ -61,11 +64,26 @@
     delayOperation = OperationNext;
     [fm reloadList];
     volume = 1;
+    isStatePlaying = YES;
     
     [self addAVPlayerNotifyCallBack];
     [self updateProgressTimerState:YES];
 }
 
+- (BOOL)applicationShouldHandleReopen:(NSApplication *)sender hasVisibleWindows:(BOOL)flag
+{
+    [window orderFront:nil];
+    return YES;
+}
+//- (void)application
+
+- (void)awakeFromNib
+{
+    CGSize windowSize = [window frame].size;
+    [viewChannels setAutoresizingMask:NSViewMinXMargin|NSViewMinYMargin];
+    [viewChannels setFrameOrigin:CGPointMake(windowSize.width - 90, windowSize.height - 20)];
+    [[[window contentView] superview] addSubview:viewChannels];
+}
 #pragma mark - methods
 
 - (void)updateProgressTimerState:(BOOL)isOn
@@ -104,14 +122,12 @@
 
 
 
-
-
-
-
 - (IBAction)playNext:(id)sender {
     [avplayer pause];
     PLSafeRelease(avplayer);
-
+    
+    [progressSlider setDoubleValue:0];
+    
     DBItem* item = [fm.list nextItem];
     if (!item) {
         NSLog(@"no play item founded");
@@ -121,11 +137,17 @@
     delayOperation = OperationNone;
     self.curItem = item;
     
+    // update player button
+    isStatePlaying = YES;
+    [btnPlayState setImage:[NSImage imageNamed:!isStatePlaying?@"play":@"pause"]];
     
     [labelTitle setStringValue:item.title];
-    [labelArtist setStringValue:item.artist];    
+    [labelArtist setStringValue:item.artist];
+    [labelAlbum  setStringValue:[NSString stringWithFormat:@"< %@ > %@",item.album,item.publicTime]];
     [viewArtwork loadImage:item.albumArtworkLargeURL
                placeholder:@"default_cover"];
+    
+    [window setTitle:[NSString stringWithFormat:@"%@ - %@",item.title,@"LessDJ"]];
     
     avplayer = [[AVPlayer alloc] initWithURL:item.songURL];
     avplayer.volume = volume;
@@ -139,6 +161,18 @@
 
     
 }
+
+- (IBAction)onTogglePlay:(id)sender
+{
+    isStatePlaying = !isStatePlaying;
+    [btnPlayState setImage:[NSImage imageNamed:!isStatePlaying?@"play":@"pause"]];
+    if (isStatePlaying) {
+        [avplayer play];
+    }else{
+        [avplayer pause];
+    }
+}
+
 - (IBAction)onBtnPlay:(id)sender {
     [avplayer play];
 }
@@ -172,19 +206,21 @@
         double duration = self.curItem.length;
         if (CMTIME_IS_VALID(ctime_)) {
             Float64 t = CMTimeGetSeconds(ctime_);
-			[labelPosition setStringValue:
-             [NSString stringWithFormat:@"%.1f/%.1f seconds",
-              t,
-              duration]];
-//            [progressSlider setEnabled:NO];
+
 			[progressSlider setDoubleValue:100 * t / duration];            
+            
+            int playerLocation = (int)[self songLocation];
+            int min = playerLocation / 60;
+            int sec = playerLocation % 60;
+            [labelPosition setStringValue:[NSString stringWithFormat:@"%d:%02d",min,sec]];
         }else{
-            [labelPosition setStringValue:@"invalid time"];
+            [labelPosition setStringValue:@"loading..."];
         }
         
     }else{
-        [labelPosition setStringValue:@"buffing..."];
+        [labelPosition setStringValue:@"loading..."];
     }
+
 }
 
 

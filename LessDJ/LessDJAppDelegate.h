@@ -22,6 +22,8 @@
     options to launch LL at startup
  
  TODO: fiex 网络不好 会卡住
+ 
+ douban theme 奇怪的问题 ，修改 windows 大小 不会刷新 label的显示，如果没显示全，拉长不更新内容
  */
 
 //the delay operations
@@ -43,6 +45,8 @@ typedef enum {
     DBItem*     curItem;
     
     DJOperation delayOperation; //some operation need callback to handle delay responses
+    
+    BOOL isStatePlaying;
 }
 
 @property(nonatomic,retain)DBFM* fm;
@@ -53,8 +57,12 @@ typedef enum {
 @property (assign) IBOutlet NSTextField *labelTitle;
 @property (assign) IBOutlet NSTextField *labelArtist;
 @property (assign) IBOutlet NSImageView *viewArtwork;
+@property (assign) IBOutlet NSPopUpButton *viewChannels;
+@property (assign) IBOutlet NSTextField *labelAlbum;
+@property (assign) IBOutlet NSButton *btnPlayState;
 
 - (IBAction)playNext:(id)sender;
+- (IBAction)onTogglePlay:(id)sender;
 - (IBAction)onBtnPlay:(id)sender;
 - (IBAction)onBtnPause:(id)sender;
 - (IBAction)onVolumeChanged:(id)sender;

@@ -42,6 +42,11 @@
 		CA779C6A146FEC3100D085AF /* TexturedSliderThumbN.tiff in Resources */ = {isa = PBXBuildFile; fileRef = CA779C61146FEC3100D085AF /* TexturedSliderThumbN.tiff */; };
 		CA779C6F146FEC4000D085AF /* BWTexturedSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = CA779C6C146FEC4000D085AF /* BWTexturedSlider.m */; };
 		CA779C70146FEC4000D085AF /* BWTexturedSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA779C6E146FEC4000D085AF /* BWTexturedSliderCell.m */; };
+		CA779C72146FF0DE00D085AF /* cover_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = CA779C71146FF0DE00D085AF /* cover_shadow.png */; };
+		CA779C75146FF4BD00D085AF /* NSVIewBG.m in Sources */ = {isa = PBXBuildFile; fileRef = CA779C74146FF4BC00D085AF /* NSVIewBG.m */; };
+		CA779C79146FF7B000D085AF /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = CA779C76146FF7AF00D085AF /* next.png */; };
+		CA779C7A146FF7B000D085AF /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = CA779C77146FF7B000D085AF /* play.png */; };
+		CA779C7B146FF7B000D085AF /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = CA779C78146FF7B000D085AF /* pause.png */; };
 		CA8108F9143459B500AADE2C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8108F8143459B500AADE2C /* Cocoa.framework */; };
 		CA810903143459B500AADE2C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA810901143459B500AADE2C /* InfoPlist.strings */; };
 		CA810905143459B500AADE2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA810904143459B500AADE2C /* main.m */; };
@@ -120,6 +125,12 @@
 		CA779C6C146FEC4000D085AF /* BWTexturedSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BWTexturedSlider.m; path = ../../../osx/bwtoolkit/BWTexturedSlider.m; sourceTree = "<group>"; };
 		CA779C6D146FEC4000D085AF /* BWTexturedSliderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BWTexturedSliderCell.h; path = ../../../osx/bwtoolkit/BWTexturedSliderCell.h; sourceTree = "<group>"; };
 		CA779C6E146FEC4000D085AF /* BWTexturedSliderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BWTexturedSliderCell.m; path = ../../../osx/bwtoolkit/BWTexturedSliderCell.m; sourceTree = "<group>"; };
+		CA779C71146FF0DE00D085AF /* cover_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover_shadow.png; sourceTree = "<group>"; };
+		CA779C73146FF4BC00D085AF /* NSVIewBG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSVIewBG.h; sourceTree = "<group>"; };
+		CA779C74146FF4BC00D085AF /* NSVIewBG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSVIewBG.m; sourceTree = "<group>"; };
+		CA779C76146FF7AF00D085AF /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
+		CA779C77146FF7B000D085AF /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		CA779C78146FF7B000D085AF /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		CA8108F4143459B500AADE2C /* LessDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LessDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8108F8143459B500AADE2C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CA8108FB143459B500AADE2C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -325,6 +336,8 @@
 				CA341C091467E39B0007160C /* PLHttpBlock.m */,
 				CAC4B1D7146D09860017EA73 /* NSApplication+BridgeSupport.h */,
 				CAC4B1D8146D09860017EA73 /* NSApplication+BridgeSupport.m */,
+				CA779C73146FF4BC00D085AF /* NSVIewBG.h */,
+				CA779C74146FF4BC00D085AF /* NSVIewBG.m */,
 			);
 			path = LessDJ;
 			sourceTree = "<group>";
@@ -332,6 +345,10 @@
 		CA8108FF143459B500AADE2C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CA779C76146FF7AF00D085AF /* next.png */,
+				CA779C77146FF7B000D085AF /* play.png */,
+				CA779C78146FF7B000D085AF /* pause.png */,
+				CA779C71146FF0DE00D085AF /* cover_shadow.png */,
 				CA779C53146FE50000D085AF /* default_cover.png */,
 				CA810900143459B500AADE2C /* LessDJ-Info.plist */,
 				CA810901143459B500AADE2C /* InfoPlist.strings */,
@@ -420,6 +437,10 @@
 				CA779C68146FEC3100D085AF /* TexturedSliderTrackLeft.tiff in Resources */,
 				CA779C69146FEC3100D085AF /* TexturedSliderThumbP.tiff in Resources */,
 				CA779C6A146FEC3100D085AF /* TexturedSliderThumbN.tiff in Resources */,
+				CA779C72146FF0DE00D085AF /* cover_shadow.png in Resources */,
+				CA779C79146FF7B000D085AF /* next.png in Resources */,
+				CA779C7A146FF7B000D085AF /* play.png in Resources */,
+				CA779C7B146FF7B000D085AF /* pause.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +479,7 @@
 				CA779C52146FE3D800D085AF /* NSImageView+RemoteImage.m in Sources */,
 				CA779C6F146FEC4000D085AF /* BWTexturedSlider.m in Sources */,
 				CA779C70146FEC4000D085AF /* BWTexturedSliderCell.m in Sources */,
+				CA779C75146FF4BD00D085AF /* NSVIewBG.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

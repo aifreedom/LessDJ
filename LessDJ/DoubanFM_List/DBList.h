@@ -57,5 +57,6 @@
 @property(readonly) NSURL*    albumArtworkLargeURL;
 @property(readonly) NSURL*    songURL;
 @property(readonly) int       length;
+@property(readonly) NSString* publicTime;
 //- (NSScriptObjectSpecifier *)objectSpecifier;
 @end
