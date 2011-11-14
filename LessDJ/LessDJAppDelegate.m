@@ -68,6 +68,10 @@
     
     [self addAVPlayerNotifyCallBack];
     [self updateProgressTimerState:YES];
+    
+#ifdef DEBUG
+    window.level = NSStatusWindowLevel;
+#endif    
 }
 
 - (BOOL)applicationShouldHandleReopen:(NSApplication *)sender hasVisibleWindows:(BOOL)flag
