@@ -21,7 +21,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>6</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
 	<key>NSHumanReadableCopyright</key>
@@ -34,5 +34,13 @@
 	<true/>
 	<key>OSAScriptingDefinition</key>
 	<string>LessDJ.sdef</string>
+	<key>SUPublicDSAKeyFile</key>
+	<string>dsa_pub.pem</string>
+	<key>SUFeedURL</key>
+	<string>http://ixhan.com/app/lessdj/lessdj_appcast.xml</string>
+	<key>SUEnableAutomaticChecks</key>
+	<true/>
+	<key>SUAllowsAutomaticUpdates</key>
+	<true/>
 </dict>
 </plist>

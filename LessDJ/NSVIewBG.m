@@ -8,7 +8,7 @@
 
 #import "NSVIewBG.h"
 
-@implementation NSVIewBG
+@implementation NSViewBG
 - (void)drawRect:(NSRect)dirtyRect
 {
     [[NSColor whiteColor] set];

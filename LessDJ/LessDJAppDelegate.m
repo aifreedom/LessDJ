@@ -81,7 +81,7 @@
 {
     CGSize windowSize = [window frame].size;
     [viewChannels setAutoresizingMask:NSViewMinXMargin|NSViewMinYMargin];
-    [viewChannels setFrameOrigin:CGPointMake(windowSize.width - 90, windowSize.height - 20)];
+    [viewChannels setFrameOrigin:CGPointMake(windowSize.width - 80, windowSize.height - 20)];
     [[[window contentView] superview] addSubview:viewChannels];
 }
 #pragma mark - methods
@@ -144,6 +144,11 @@
     [labelTitle setStringValue:item.title];
     [labelArtist setStringValue:item.artist];
     [labelAlbum  setStringValue:[NSString stringWithFormat:@"< %@ > %@",item.album,item.publicTime]];
+    
+//    [labelTitle sizeToFit];
+//    [labelAlbum sizeToFit];
+//    [labelArtist sizeToFit];
+    
     [viewArtwork loadImage:item.albumArtworkLargeURL
                placeholder:@"default_cover"];
     

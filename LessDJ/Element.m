@@ -51,7 +51,7 @@
 #include <sys/types.h>
 #include <unistd.h>
 
-#define SLOG (void)
+//#define //SLOG (void)
 
 @implementation Element
 
@@ -91,14 +91,14 @@
 	}
 		/* I put the logging statement later after the initialization so we can see
 		the uniqueID */
-	SLOG(@"init element %@", self.uniqueID);
+//	//SLOG(@"init element %@", self.uniqueID);
 	return self;
 }
 
 	/* standard deallocation of our members followed by superclass.
 	nothing out of the ordinary here. */
 - (void) dealloc {
-	SLOG(@"dealloc element %@", self.uniqueID);
+//	//SLOG(@"dealloc element %@", self.uniqueID);
 	self.uniqueID = nil;
 	[container release];
 	[containerProperty release];
@@ -136,7 +136,7 @@
 		by a unique count value.  see the man page for getpid for more info about process
 		id values.  */
 	theID = [NSString stringWithFormat:@"SSO-%d-%d", gMyProcessID, gElementCounter++];
-	SLOG(@"new unique id ='%@'", theID);
+	//SLOG(@"new unique id ='%@'", theID);
 	return theID;
 }
 
@@ -147,17 +147,17 @@
 	we have lumped the setter functions together because we will always
 	call them together. */
 - (id)container {
-	SLOG(@" of %@ as %@", self.uniqueID, container);
+	//SLOG(@" of %@ as %@", self.uniqueID, container);
     return [[container retain] autorelease];
 }
 
 - (NSString *)containerProperty {
-	SLOG(@" return  %@ as '%@'", self.uniqueID, containerProperty);
+	//SLOG(@" return  %@ as '%@'", self.uniqueID, containerProperty);
     return [[containerProperty retain] autorelease];
 }
 
 - (void)setContainer:(id)value andProperty:(NSString *)property {
-	SLOG(@" of %@ to %@ and '%@'", self.uniqueID, [value class], property);
+	//SLOG(@" of %@ to %@ and '%@'", self.uniqueID, [value class], property);
     if (container != value) {
         [container release];
         container = [value retain];
@@ -178,7 +178,7 @@
 }
 
 - (void)setUniqueID:(NSString *)value {
-//	SLOG(@" of %@ to '%@'", self.uniqueID, value);
+//	//SLOG(@" of %@ to '%@'", self.uniqueID, value);
     if (uniqueID != value) {
         [uniqueID release];
         uniqueID = [value copy];
@@ -189,12 +189,12 @@
 	/* standard setter and getter methods for the 'name' property
 	nothing out of the ordinary here. */
 - (NSString *)name {
-//	SLOG(@" of %@ as '%@'", self.uniqueID, name);
+//	//SLOG(@" of %@ as '%@'", self.uniqueID, name);
     return [[name retain] autorelease];
 }
 
 - (void)setName:(NSString *)value {
-//	SLOG(@" of %@ to '%@'", self.uniqueID, value);
+//	//SLOG(@" of %@ to '%@'", self.uniqueID, value);
     if (name != value) {
         [name release];
         name = [value copy];
@@ -206,7 +206,7 @@
 	record referring to itself.  You must call setContainer:andProperty: before
 	you can call this method. */
 - (NSScriptObjectSpecifier *)objectSpecifier {
-//	SLOG(@" of %@ ", self.uniqueID);
+//	//SLOG(@" of %@ ", self.uniqueID);
 	return [[NSUniqueIDSpecifier allocWithZone:[self zone]]
 		initWithContainerClassDescription:(NSScriptClassDescription*) [self.container classDescription]
 			containerSpecifier:[self.container objectSpecifier]

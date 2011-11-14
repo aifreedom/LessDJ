@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSVIewBG : NSView
+@interface NSViewBG : NSView
 
 @end
 

@@ -47,6 +47,9 @@
 		CA779C79146FF7B000D085AF /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = CA779C76146FF7AF00D085AF /* next.png */; };
 		CA779C7A146FF7B000D085AF /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = CA779C77146FF7B000D085AF /* play.png */; };
 		CA779C7B146FF7B000D085AF /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = CA779C78146FF7B000D085AF /* pause.png */; };
+		CA779C81147008DE00D085AF /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA779C80147008DD00D085AF /* Sparkle.framework */; };
+		CA779C83147009EA00D085AF /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA779C80147008DD00D085AF /* Sparkle.framework */; };
+		CA779CA914700CC400D085AF /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = CA779CA814700CC400D085AF /* dsa_pub.pem */; };
 		CA8108F9143459B500AADE2C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8108F8143459B500AADE2C /* Cocoa.framework */; };
 		CA810903143459B500AADE2C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA810901143459B500AADE2C /* InfoPlist.strings */; };
 		CA810905143459B500AADE2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA810904143459B500AADE2C /* main.m */; };
@@ -60,6 +63,19 @@
 		CAC4B1DC146D117B0017EA73 /* Element.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC4B1DB146D117A0017EA73 /* Element.m */; };
 		CAD051C6146BD276005E8929 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD051C5146BD276005E8929 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CA779C82147008F300D085AF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CA779C83147009EA00D085AF /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CA341B881467D15B0007160C /* NSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSAdditions.h; sourceTree = "<group>"; };
@@ -131,6 +147,8 @@
 		CA779C76146FF7AF00D085AF /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
 		CA779C77146FF7B000D085AF /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		CA779C78146FF7B000D085AF /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		CA779C80147008DD00D085AF /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = "../../../Library/Developer/Xcode/DerivedData/LessMusic-auncycjnripiiwctdwqhvojhmsha/Build/Products/Debug/Sparkle.framework"; sourceTree = "<group>"; };
+		CA779CA814700CC400D085AF /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dsa_pub.pem; path = Distribute/dsa_pub.pem; sourceTree = SOURCE_ROOT; };
 		CA8108F4143459B500AADE2C /* LessDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LessDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8108F8143459B500AADE2C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CA8108FB143459B500AADE2C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -160,6 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA779C81147008DE00D085AF /* Sparkle.framework in Frameworks */,
 				CAC4B1BD146CDB4A0017EA73 /* CoreMedia.framework in Frameworks */,
 				CAD051C6146BD276005E8929 /* AVFoundation.framework in Frameworks */,
 				CA341BE01467D22F0007160C /* QuartzCore.framework in Frameworks */,
@@ -300,6 +319,7 @@
 		CA8108F7143459B500AADE2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CA779C80147008DD00D085AF /* Sparkle.framework */,
 				CAC4B1BC146CDB4A0017EA73 /* CoreMedia.framework */,
 				CAD051C5146BD276005E8929 /* AVFoundation.framework */,
 				CA341BDF1467D22F0007160C /* QuartzCore.framework */,
@@ -345,6 +365,7 @@
 		CA8108FF143459B500AADE2C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CA779CA814700CC400D085AF /* dsa_pub.pem */,
 				CA779C76146FF7AF00D085AF /* next.png */,
 				CA779C77146FF7B000D085AF /* play.png */,
 				CA779C78146FF7B000D085AF /* pause.png */,
@@ -382,6 +403,7 @@
 				CA8108F0143459B500AADE2C /* Sources */,
 				CA8108F1143459B500AADE2C /* Frameworks */,
 				CA8108F2143459B500AADE2C /* Resources */,
+				CA779C82147008F300D085AF /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -441,6 +463,7 @@
 				CA779C79146FF7B000D085AF /* next.png in Resources */,
 				CA779C7A146FF7B000D085AF /* play.png in Resources */,
 				CA779C7B146FF7B000D085AF /* pause.png in Resources */,
+				CA779CA914700CC400D085AF /* dsa_pub.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,6 +584,10 @@
 		CA810913143459B600AADE2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/LessMusic-auncycjnripiiwctdwqhvojhmsha/Build/Products/Debug\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LessDJ/LessDJ-Prefix.pch";
 				INFOPLIST_FILE = "LessDJ/LessDJ-Info.plist";
@@ -572,6 +599,10 @@
 		CA810914143459B600AADE2C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/LessMusic-auncycjnripiiwctdwqhvojhmsha/Build/Products/Debug\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LessDJ/LessDJ-Prefix.pch";
 				INFOPLIST_FILE = "LessDJ/LessDJ-Info.plist";
