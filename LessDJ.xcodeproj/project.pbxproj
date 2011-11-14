@@ -50,6 +50,7 @@
 		CA779C81147008DE00D085AF /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA779C80147008DD00D085AF /* Sparkle.framework */; };
 		CA779C83147009EA00D085AF /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA779C80147008DD00D085AF /* Sparkle.framework */; };
 		CA779CA914700CC400D085AF /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = CA779CA814700CC400D085AF /* dsa_pub.pem */; };
+		CA779CCD1470F0EA00D085AF /* vinyltunes.icns in Resources */ = {isa = PBXBuildFile; fileRef = CA779CCC1470F0EA00D085AF /* vinyltunes.icns */; };
 		CA8108F9143459B500AADE2C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8108F8143459B500AADE2C /* Cocoa.framework */; };
 		CA810903143459B500AADE2C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA810901143459B500AADE2C /* InfoPlist.strings */; };
 		CA810905143459B500AADE2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA810904143459B500AADE2C /* main.m */; };
@@ -149,6 +150,7 @@
 		CA779C78146FF7B000D085AF /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		CA779C80147008DD00D085AF /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = "../../../Library/Developer/Xcode/DerivedData/LessMusic-auncycjnripiiwctdwqhvojhmsha/Build/Products/Debug/Sparkle.framework"; sourceTree = "<group>"; };
 		CA779CA814700CC400D085AF /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dsa_pub.pem; path = Distribute/dsa_pub.pem; sourceTree = SOURCE_ROOT; };
+		CA779CCC1470F0EA00D085AF /* vinyltunes.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = vinyltunes.icns; sourceTree = "<group>"; };
 		CA8108F4143459B500AADE2C /* LessDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LessDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8108F8143459B500AADE2C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CA8108FB143459B500AADE2C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -300,6 +302,7 @@
 		CA8108E9143459B500AADE2C = {
 			isa = PBXGroup;
 			children = (
+				CA779CCC1470F0EA00D085AF /* vinyltunes.icns */,
 				CA341BE11467D4100007160C /* SBJSON */,
 				CA341B861467D15B0007160C /* PlutoLand */,
 				CA8108FE143459B500AADE2C /* LessDJ */,
@@ -464,6 +467,7 @@
 				CA779C7A146FF7B000D085AF /* play.png in Resources */,
 				CA779C7B146FF7B000D085AF /* pause.png in Resources */,
 				CA779CA914700CC400D085AF /* dsa_pub.pem in Resources */,
+				CA779CCD1470F0EA00D085AF /* vinyltunes.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

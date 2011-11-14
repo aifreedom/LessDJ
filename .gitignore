@@ -13,3 +13,9 @@ xcuserdata
 profile
 *.moved-aside
 .DS_Store
+
+Distribute/*
+!Distribute/dsa_pub.pem
+!Distribute/template.xml
+!Distribute/change_version.rb
+!Distribute/distribute.sh

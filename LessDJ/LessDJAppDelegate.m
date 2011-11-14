@@ -203,6 +203,10 @@
     [avplayer seekToTime:CMTimeMakeWithSeconds(desireSeconds, ctime_.timescale)];
 }
 
+- (IBAction)onGetLL:(id)sender {
+    [[NSWorkspace sharedWorkspace] openURL:URL(@"http://ixhan.com/lesslyrics")];
+}
+
 - (void)updateProgress:(NSTimer *)updatedTimer
 {
     
