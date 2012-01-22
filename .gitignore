@@ -19,3 +19,4 @@ Distribute/*
 !Distribute/template.xml
 !Distribute/change_version.rb
 !Distribute/distribute.sh
+!Distribute/dsa_pub.pem
