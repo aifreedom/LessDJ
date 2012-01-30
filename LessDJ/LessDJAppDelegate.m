@@ -211,6 +211,11 @@
     [[NSWorkspace sharedWorkspace] openURL:URL(@"http://ixhan.com/lesslyrics")];
 }
 
+- (IBAction)onOrderFront:(id)sender
+{
+    [window orderFront:nil];
+}
+
 - (void)updateProgress:(NSTimer *)updatedTimer
 {
     
@@ -288,5 +293,16 @@
         }break;
     }
 }
+
+//- (BOOL)validateMenuItem:(NSMenuItem *)item {
+//
+////    if ([item action] == @selector(onOrderFront)) {
+////        return YES;
+////    }else{
+////        return NO;
+////    }
+//    return YES;
+//
+//}
 
 @end

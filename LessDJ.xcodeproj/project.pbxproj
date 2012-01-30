@@ -60,7 +60,6 @@
 		CA276C2714D689D000F952DC /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = CA779C78146FF7B000D085AF /* pause.png */; };
 		CA276C2814D689D000F952DC /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = CA779CA814700CC400D085AF /* dsa_pub.pem */; };
 		CA276C2914D689D000F952DC /* vinyltunes.icns in Resources */ = {isa = PBXBuildFile; fileRef = CA779CCC1470F0EA00D085AF /* vinyltunes.icns */; };
-		CA276C2B14D689D000F952DC /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA779C80147008DD00D085AF /* Sparkle.framework */; };
 		CA276C3614D68B5C00F952DC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA276C3514D68B5C00F952DC /* MainMenu.xib */; };
 		CA341BC41467D15B0007160C /* NSDictionary+NonNull.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341B8A1467D15B0007160C /* NSDictionary+NonNull.m */; };
 		CA341BC51467D15B0007160C /* NSDictionary+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341B8C1467D15B0007160C /* NSDictionary+URL.m */; };
@@ -102,8 +101,6 @@
 		CA779C79146FF7B000D085AF /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = CA779C76146FF7AF00D085AF /* next.png */; };
 		CA779C7A146FF7B000D085AF /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = CA779C77146FF7B000D085AF /* play.png */; };
 		CA779C7B146FF7B000D085AF /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = CA779C78146FF7B000D085AF /* pause.png */; };
-		CA779C81147008DE00D085AF /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA779C80147008DD00D085AF /* Sparkle.framework */; };
-		CA779C83147009EA00D085AF /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA779C80147008DD00D085AF /* Sparkle.framework */; };
 		CA779CA914700CC400D085AF /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = CA779CA814700CC400D085AF /* dsa_pub.pem */; };
 		CA779CCD1470F0EA00D085AF /* vinyltunes.icns in Resources */ = {isa = PBXBuildFile; fileRef = CA779CCC1470F0EA00D085AF /* vinyltunes.icns */; };
 		CA8108F9143459B500AADE2C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8108F8143459B500AADE2C /* Cocoa.framework */; };
@@ -127,7 +124,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CA276C2B14D689D000F952DC /* Sparkle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +133,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CA779C83147009EA00D085AF /* Sparkle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +210,6 @@
 		CA779C76146FF7AF00D085AF /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
 		CA779C77146FF7B000D085AF /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		CA779C78146FF7B000D085AF /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
-		CA779C80147008DD00D085AF /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = "../../../Library/Developer/Xcode/DerivedData/LessMusic-auncycjnripiiwctdwqhvojhmsha/Build/Products/Debug/Sparkle.framework"; sourceTree = "<group>"; };
 		CA779CA814700CC400D085AF /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dsa_pub.pem; path = Distribute/dsa_pub.pem; sourceTree = SOURCE_ROOT; };
 		CA779CCC1470F0EA00D085AF /* vinyltunes.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = vinyltunes.icns; sourceTree = "<group>"; };
 		CA8108F4143459B500AADE2C /* LessDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LessDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -259,7 +253,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA779C81147008DE00D085AF /* Sparkle.framework in Frameworks */,
 				CAC4B1BD146CDB4A0017EA73 /* CoreMedia.framework in Frameworks */,
 				CAD051C6146BD276005E8929 /* AVFoundation.framework in Frameworks */,
 				CA341BE01467D22F0007160C /* QuartzCore.framework in Frameworks */,
@@ -410,7 +403,6 @@
 		CA8108F7143459B500AADE2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CA779C80147008DD00D085AF /* Sparkle.framework */,
 				CAC4B1BC146CDB4A0017EA73 /* CoreMedia.framework */,
 				CAD051C5146BD276005E8929 /* AVFoundation.framework */,
 				CA341BDF1467D22F0007160C /* QuartzCore.framework */,
@@ -714,10 +706,8 @@
 		CA276C2D14D689D000F952DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/LessMusic-auncycjnripiiwctdwqhvojhmsha/Build/Products/Debug\"",
-				);
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LessDJ/LessDJ-Prefix.pch";
 				INFOPLIST_FILE = "LessDJ/LessDJ-Info.plist";
@@ -729,14 +719,13 @@
 		CA276C2E14D689D000F952DC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/LessMusic-auncycjnripiiwctdwqhvojhmsha/Build/Products/Debug\"",
-				);
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LessDJ/LessDJ-Prefix.pch";
 				INFOPLIST_FILE = "LessDJ/LessDJ-Info.plist";
 				PRODUCT_NAME = LessDJ;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -789,10 +778,7 @@
 		CA810913143459B600AADE2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/LessMusic-auncycjnripiiwctdwqhvojhmsha/Build/Products/Debug\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LessDJ/LessDJ-Prefix.pch";
 				INFOPLIST_FILE = "LessDJ/LessDJ-Info.plist";
@@ -804,10 +790,7 @@
 		CA810914143459B600AADE2C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/LessMusic-auncycjnripiiwctdwqhvojhmsha/Build/Products/Debug\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LessDJ/LessDJ-Prefix.pch";
 				INFOPLIST_FILE = "LessDJ/LessDJ-Info.plist";

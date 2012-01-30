@@ -69,6 +69,7 @@ typedef enum {
 - (IBAction)onPopUpChanged:(id)sender;
 - (IBAction)onProgressChanged:(id)sender;
 - (IBAction)onGetLL:(id)sender;
+- (IBAction)onOrderFront:(id)sender;
 
 @property(nonatomic,readonly) CGFloat songLocation;
 @property(retain)DBItem* curItem;
