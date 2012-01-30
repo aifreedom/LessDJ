@@ -7,6 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA276BF114D689D000F952DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA810904143459B500AADE2C /* main.m */; };
+		CA276BF214D689D000F952DC /* LessDJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA81090B143459B500AADE2C /* LessDJAppDelegate.m */; };
+		CA276BF314D689D000F952DC /* NSDictionary+NonNull.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341B8A1467D15B0007160C /* NSDictionary+NonNull.m */; };
+		CA276BF414D689D000F952DC /* NSDictionary+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341B8C1467D15B0007160C /* NSDictionary+URL.m */; };
+		CA276BF514D689D000F952DC /* NSString+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341B8E1467D15B0007160C /* NSString+Addition.m */; };
+		CA276BF614D689D000F952DC /* PLGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341B9D1467D15B0007160C /* PLGlobal.m */; };
+		CA276BF714D689D000F952DC /* PLOG.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341B9F1467D15B0007160C /* PLOG.m */; };
+		CA276BF814D689D000F952DC /* PLSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BA11467D15B0007160C /* PLSettings.m */; };
+		CA276BF914D689D000F952DC /* T.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BA41467D15B0007160C /* T.m */; };
+		CA276BFA14D689D000F952DC /* PLHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BA71467D15B0007160C /* PLHttpClient.m */; };
+		CA276BFB14D689D000F952DC /* PLHttpConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BA91467D15B0007160C /* PLHttpConfig.m */; };
+		CA276BFC14D689D000F952DC /* PLHttpQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BAB1467D15B0007160C /* PLHttpQueue.m */; };
+		CA276BFD14D689D000F952DC /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BE41467D4100007160C /* NSObject+SBJSON.m */; };
+		CA276BFE14D689D000F952DC /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BE61467D4100007160C /* NSString+SBJSON.m */; };
+		CA276BFF14D689D000F952DC /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BE81467D4100007160C /* SBJsonBase.m */; };
+		CA276C0014D689D000F952DC /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BEA1467D4100007160C /* SBJsonParser.m */; };
+		CA276C0114D689D000F952DC /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BEC1467D4100007160C /* SBJsonWriter.m */; };
+		CA276C0214D689D000F952DC /* DBList.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BF61467D48E0007160C /* DBList.m */; };
+		CA276C0314D689D000F952DC /* DBFM.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341BF91467D4B30007160C /* DBFM.m */; };
+		CA276C0414D689D000F952DC /* PLHttpBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341C091467E39B0007160C /* PLHttpBlock.m */; };
+		CA276C0514D689D000F952DC /* NSApplication+BridgeSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC4B1D8146D09860017EA73 /* NSApplication+BridgeSupport.m */; };
+		CA276C0614D689D000F952DC /* Element.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC4B1DB146D117A0017EA73 /* Element.m */; };
+		CA276C0714D689D000F952DC /* NSImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CA779C48146FDB9C00D085AF /* NSImageCache.m */; };
+		CA276C0814D689D000F952DC /* PLImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CA779C4B146FDF6700D085AF /* PLImageRequest.m */; };
+		CA276C0914D689D000F952DC /* NSImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CA779C4E146FDFF800D085AF /* NSImageLoader.m */; };
+		CA276C0A14D689D000F952DC /* NSImageView+RemoteImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CA779C51146FE3D800D085AF /* NSImageView+RemoteImage.m */; };
+		CA276C0B14D689D000F952DC /* BWTexturedSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = CA779C6C146FEC4000D085AF /* BWTexturedSlider.m */; };
+		CA276C0C14D689D000F952DC /* BWTexturedSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA779C6E146FEC4000D085AF /* BWTexturedSliderCell.m */; };
+		CA276C0D14D689D000F952DC /* NSVIewBG.m in Sources */ = {isa = PBXBuildFile; fileRef = CA779C74146FF4BC00D085AF /* NSVIewBG.m */; };
+		CA276C1014D689D000F952DC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC4B1BC146CDB4A0017EA73 /* CoreMedia.framework */; };
+		CA276C1114D689D000F952DC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD051C5146BD276005E8929 /* AVFoundation.framework */; };
+		CA276C1214D689D000F952DC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA341BDF1467D22F0007160C /* QuartzCore.framework */; };
+		CA276C1314D689D000F952DC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8109721434628800AADE2C /* AudioToolbox.framework */; };
+		CA276C1414D689D000F952DC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8108F8143459B500AADE2C /* Cocoa.framework */; };
+		CA276C1614D689D000F952DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA810901143459B500AADE2C /* InfoPlist.strings */; };
+		CA276C1714D689D000F952DC /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CA810907143459B500AADE2C /* Credits.rtf */; };
+		CA276C1914D689D000F952DC /* LessDJ.sdef in Resources */ = {isa = PBXBuildFile; fileRef = CAC4B1D4146D08CD0017EA73 /* LessDJ.sdef */; };
+		CA276C1A14D689D000F952DC /* default_cover.png in Resources */ = {isa = PBXBuildFile; fileRef = CA779C53146FE50000D085AF /* default_cover.png */; };
+		CA276C1B14D689D000F952DC /* TexturedSliderPhotoSmall.tif in Resources */ = {isa = PBXBuildFile; fileRef = CA779C59146FEC3100D085AF /* TexturedSliderPhotoSmall.tif */; };
+		CA276C1C14D689D000F952DC /* TexturedSliderPhotoLarge.tif in Resources */ = {isa = PBXBuildFile; fileRef = CA779C5A146FEC3100D085AF /* TexturedSliderPhotoLarge.tif */; };
+		CA276C1D14D689D000F952DC /* TexturedSliderSpeakerQuiet.png in Resources */ = {isa = PBXBuildFile; fileRef = CA779C5B146FEC3100D085AF /* TexturedSliderSpeakerQuiet.png */; };
+		CA276C1E14D689D000F952DC /* TexturedSliderSpeakerLoud.png in Resources */ = {isa = PBXBuildFile; fileRef = CA779C5C146FEC3100D085AF /* TexturedSliderSpeakerLoud.png */; };
+		CA276C1F14D689D000F952DC /* TexturedSliderTrackRight.tiff in Resources */ = {isa = PBXBuildFile; fileRef = CA779C5D146FEC3100D085AF /* TexturedSliderTrackRight.tiff */; };
+		CA276C2014D689D000F952DC /* TexturedSliderTrackFill.tiff in Resources */ = {isa = PBXBuildFile; fileRef = CA779C5E146FEC3100D085AF /* TexturedSliderTrackFill.tiff */; };
+		CA276C2114D689D000F952DC /* TexturedSliderTrackLeft.tiff in Resources */ = {isa = PBXBuildFile; fileRef = CA779C5F146FEC3100D085AF /* TexturedSliderTrackLeft.tiff */; };
+		CA276C2214D689D000F952DC /* TexturedSliderThumbP.tiff in Resources */ = {isa = PBXBuildFile; fileRef = CA779C60146FEC3100D085AF /* TexturedSliderThumbP.tiff */; };
+		CA276C2314D689D000F952DC /* TexturedSliderThumbN.tiff in Resources */ = {isa = PBXBuildFile; fileRef = CA779C61146FEC3100D085AF /* TexturedSliderThumbN.tiff */; };
+		CA276C2414D689D000F952DC /* cover_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = CA779C71146FF0DE00D085AF /* cover_shadow.png */; };
+		CA276C2514D689D000F952DC /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = CA779C76146FF7AF00D085AF /* next.png */; };
+		CA276C2614D689D000F952DC /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = CA779C77146FF7B000D085AF /* play.png */; };
+		CA276C2714D689D000F952DC /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = CA779C78146FF7B000D085AF /* pause.png */; };
+		CA276C2814D689D000F952DC /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = CA779CA814700CC400D085AF /* dsa_pub.pem */; };
+		CA276C2914D689D000F952DC /* vinyltunes.icns in Resources */ = {isa = PBXBuildFile; fileRef = CA779CCC1470F0EA00D085AF /* vinyltunes.icns */; };
+		CA276C2B14D689D000F952DC /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA779C80147008DD00D085AF /* Sparkle.framework */; };
+		CA276C3614D68B5C00F952DC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA276C3514D68B5C00F952DC /* MainMenu.xib */; };
 		CA341BC41467D15B0007160C /* NSDictionary+NonNull.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341B8A1467D15B0007160C /* NSDictionary+NonNull.m */; };
 		CA341BC51467D15B0007160C /* NSDictionary+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341B8C1467D15B0007160C /* NSDictionary+URL.m */; };
 		CA341BC61467D15B0007160C /* NSString+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = CA341B8E1467D15B0007160C /* NSString+Addition.m */; };
@@ -66,6 +121,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		CA276C2A14D689D000F952DC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CA276C2B14D689D000F952DC /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA779C82147008F300D085AF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -79,6 +144,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CA276C2F14D689D000F952DC /* LessDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LessDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA276C3514D68B5C00F952DC /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		CA341B881467D15B0007160C /* NSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSAdditions.h; sourceTree = "<group>"; };
 		CA341B891467D15B0007160C /* NSDictionary+NonNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NonNull.h"; sourceTree = "<group>"; };
 		CA341B8A1467D15B0007160C /* NSDictionary+NonNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NonNull.m"; sourceTree = "<group>"; };
@@ -176,6 +243,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CA276C0E14D689D000F952DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA276C1014D689D000F952DC /* CoreMedia.framework in Frameworks */,
+				CA276C1114D689D000F952DC /* AVFoundation.framework in Frameworks */,
+				CA276C1214D689D000F952DC /* QuartzCore.framework in Frameworks */,
+				CA276C1314D689D000F952DC /* AudioToolbox.framework in Frameworks */,
+				CA276C1414D689D000F952DC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA8108F1143459B500AADE2C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -192,6 +271,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA276C3414D68B2800F952DC /* AppStore */ = {
+			isa = PBXGroup;
+			children = (
+				CA276C3514D68B5C00F952DC /* MainMenu.xib */,
+			);
+			path = AppStore;
+			sourceTree = "<group>";
+		};
 		CA341B861467D15B0007160C /* PlutoLand */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +402,7 @@
 			isa = PBXGroup;
 			children = (
 				CA8108F4143459B500AADE2C /* LessDJ.app */,
+				CA276C2F14D689D000F952DC /* LessDJ.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -346,6 +434,7 @@
 		CA8108FE143459B500AADE2C /* LessDJ */ = {
 			isa = PBXGroup;
 			children = (
+				CA276C3414D68B2800F952DC /* AppStore */,
 				CA779C58146FEBE100D085AF /* custom slider */,
 				CA779C45146FDB6900D085AF /* NSImageCache */,
 				CAC4B1DA146D117A0017EA73 /* Element.h */,
@@ -399,6 +488,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CA276BEF14D689D000F952DC /* LessDJ AppStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA276C2C14D689D000F952DC /* Build configuration list for PBXNativeTarget "LessDJ AppStore" */;
+			buildPhases = (
+				CA276BF014D689D000F952DC /* Sources */,
+				CA276C0E14D689D000F952DC /* Frameworks */,
+				CA276C1514D689D000F952DC /* Resources */,
+				CA276C2A14D689D000F952DC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LessDJ AppStore";
+			productName = LessDJ;
+			productReference = CA276C2F14D689D000F952DC /* LessDJ.app */;
+			productType = "com.apple.product-type.application";
+		};
 		CA8108F3143459B500AADE2C /* LessDJ */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA810912143459B600AADE2C /* Build configuration list for PBXNativeTarget "LessDJ" */;
@@ -439,11 +546,39 @@
 			projectRoot = "";
 			targets = (
 				CA8108F3143459B500AADE2C /* LessDJ */,
+				CA276BEF14D689D000F952DC /* LessDJ AppStore */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CA276C1514D689D000F952DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA276C1614D689D000F952DC /* InfoPlist.strings in Resources */,
+				CA276C1714D689D000F952DC /* Credits.rtf in Resources */,
+				CA276C1914D689D000F952DC /* LessDJ.sdef in Resources */,
+				CA276C1A14D689D000F952DC /* default_cover.png in Resources */,
+				CA276C1B14D689D000F952DC /* TexturedSliderPhotoSmall.tif in Resources */,
+				CA276C1C14D689D000F952DC /* TexturedSliderPhotoLarge.tif in Resources */,
+				CA276C1D14D689D000F952DC /* TexturedSliderSpeakerQuiet.png in Resources */,
+				CA276C1E14D689D000F952DC /* TexturedSliderSpeakerLoud.png in Resources */,
+				CA276C1F14D689D000F952DC /* TexturedSliderTrackRight.tiff in Resources */,
+				CA276C2014D689D000F952DC /* TexturedSliderTrackFill.tiff in Resources */,
+				CA276C2114D689D000F952DC /* TexturedSliderTrackLeft.tiff in Resources */,
+				CA276C2214D689D000F952DC /* TexturedSliderThumbP.tiff in Resources */,
+				CA276C2314D689D000F952DC /* TexturedSliderThumbN.tiff in Resources */,
+				CA276C2414D689D000F952DC /* cover_shadow.png in Resources */,
+				CA276C2514D689D000F952DC /* next.png in Resources */,
+				CA276C2614D689D000F952DC /* play.png in Resources */,
+				CA276C2714D689D000F952DC /* pause.png in Resources */,
+				CA276C2814D689D000F952DC /* dsa_pub.pem in Resources */,
+				CA276C2914D689D000F952DC /* vinyltunes.icns in Resources */,
+				CA276C3614D68B5C00F952DC /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA8108F2143459B500AADE2C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -474,6 +609,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CA276BF014D689D000F952DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA276BF114D689D000F952DC /* main.m in Sources */,
+				CA276BF214D689D000F952DC /* LessDJAppDelegate.m in Sources */,
+				CA276BF314D689D000F952DC /* NSDictionary+NonNull.m in Sources */,
+				CA276BF414D689D000F952DC /* NSDictionary+URL.m in Sources */,
+				CA276BF514D689D000F952DC /* NSString+Addition.m in Sources */,
+				CA276BF614D689D000F952DC /* PLGlobal.m in Sources */,
+				CA276BF714D689D000F952DC /* PLOG.m in Sources */,
+				CA276BF814D689D000F952DC /* PLSettings.m in Sources */,
+				CA276BF914D689D000F952DC /* T.m in Sources */,
+				CA276BFA14D689D000F952DC /* PLHttpClient.m in Sources */,
+				CA276BFB14D689D000F952DC /* PLHttpConfig.m in Sources */,
+				CA276BFC14D689D000F952DC /* PLHttpQueue.m in Sources */,
+				CA276BFD14D689D000F952DC /* NSObject+SBJSON.m in Sources */,
+				CA276BFE14D689D000F952DC /* NSString+SBJSON.m in Sources */,
+				CA276BFF14D689D000F952DC /* SBJsonBase.m in Sources */,
+				CA276C0014D689D000F952DC /* SBJsonParser.m in Sources */,
+				CA276C0114D689D000F952DC /* SBJsonWriter.m in Sources */,
+				CA276C0214D689D000F952DC /* DBList.m in Sources */,
+				CA276C0314D689D000F952DC /* DBFM.m in Sources */,
+				CA276C0414D689D000F952DC /* PLHttpBlock.m in Sources */,
+				CA276C0514D689D000F952DC /* NSApplication+BridgeSupport.m in Sources */,
+				CA276C0614D689D000F952DC /* Element.m in Sources */,
+				CA276C0714D689D000F952DC /* NSImageCache.m in Sources */,
+				CA276C0814D689D000F952DC /* PLImageRequest.m in Sources */,
+				CA276C0914D689D000F952DC /* NSImageLoader.m in Sources */,
+				CA276C0A14D689D000F952DC /* NSImageView+RemoteImage.m in Sources */,
+				CA276C0B14D689D000F952DC /* BWTexturedSlider.m in Sources */,
+				CA276C0C14D689D000F952DC /* BWTexturedSliderCell.m in Sources */,
+				CA276C0D14D689D000F952DC /* NSVIewBG.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA8108F0143459B500AADE2C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -540,6 +711,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CA276C2D14D689D000F952DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/LessMusic-auncycjnripiiwctdwqhvojhmsha/Build/Products/Debug\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LessDJ/LessDJ-Prefix.pch";
+				INFOPLIST_FILE = "LessDJ/LessDJ-Info.plist";
+				PRODUCT_NAME = LessDJ;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CA276C2E14D689D000F952DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/LessMusic-auncycjnripiiwctdwqhvojhmsha/Build/Products/Debug\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LessDJ/LessDJ-Prefix.pch";
+				INFOPLIST_FILE = "LessDJ/LessDJ-Info.plist";
+				PRODUCT_NAME = LessDJ;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		CA810910143459B600AADE2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -618,6 +819,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CA276C2C14D689D000F952DC /* Build configuration list for PBXNativeTarget "LessDJ AppStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA276C2D14D689D000F952DC /* Debug */,
+				CA276C2E14D689D000F952DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CA8108EE143459B500AADE2C /* Build configuration list for PBXProject "LessDJ" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
